@@ -45,7 +45,12 @@ object PresentationUtils {
     ): String {
         return with(thumbnailModel) { getImageUrl(path, extension, imageSize) }
     }
-
+    fun getImageUrl(
+        thumbnailModel: com.lbg.demo.marvel_heroes.data.remote.data_source.responses.movies.Thumbnail,
+        imageSize: String = PORTRAIT_FANTASTIC
+    ): String {
+        return with(thumbnailModel) { getImageUrl(path, extension, imageSize) }
+    }
     private fun getImageUrl(
         path: String,
         imageExtension: String,

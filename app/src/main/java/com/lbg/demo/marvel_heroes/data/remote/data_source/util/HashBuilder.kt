@@ -10,6 +10,13 @@ import com.lbg.demo.core.util.Constants.EMPTY_STRING
 import java.math.BigInteger
 import java.security.MessageDigest
 
+fun main(str: Array<String>){
+    HashBuilder().build().apply {
+        println(HashBuilder().build().hash)
+        println(HashBuilder().build().timeStamp)
+    }
+
+}
 class HashBuilder {
 
     var timeStamp: String = EMPTY_STRING

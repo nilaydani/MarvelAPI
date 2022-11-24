@@ -9,5 +9,5 @@ object ApiEndpoint {
 
     const val CHARACTERS_URL = "v1/public/characters"
     const val CHARACTERS_DETAIL_URL = "v1/public/characters/{character_id}"
-
+    const val MOVIES_URL = "v1/public/comics"
 }

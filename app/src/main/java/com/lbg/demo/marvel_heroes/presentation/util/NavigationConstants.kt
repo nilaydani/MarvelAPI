@@ -3,6 +3,7 @@ package com.lbg.demo.marvel_heroes.presentation.util
 object NavigationConstants {
     const val SPLASH_SCREEN = "splash_screen"
     const val HEROES_LIST_SCREEN = "hero_list_screen"
+    const val MOVIE_LIST_SCREEN = "movie_list_screen"
     const val HERO_DETAIL_SCREEN = "hero_detail_screen"
 
     const val DOMINANT_COLOR = "dominantColor"

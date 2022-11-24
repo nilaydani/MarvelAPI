@@ -8,6 +8,7 @@ package com.lbg.demo.marvel_heroes.data.remote.data_source
 
 
 import com.lbg.demo.marvel_heroes.data.remote.data_source.responses.characters.CharacterResponseDto
+import com.lbg.demo.marvel_heroes.data.remote.data_source.responses.movies.MoviesResponseModelDto
 import com.lbg.demo.marvel_heroes.data.remote.data_source.util.ApiEndpoint
 import com.lbg.demo.marvel_heroes.data.remote.data_source.util.ApiHelper
 import retrofit2.http.GET
@@ -24,6 +25,15 @@ interface MarvelApi {
         @Query(ApiHelper.API_KEY) publicApiKey: String,
         @Query(ApiHelper.HASH) hash: String
     ): CharacterResponseDto
+    @GET(ApiEndpoint.MOVIES_URL)
+
+    suspend fun getMoviesList(
+        @Query(LIMIT) limit: Int,
+        @Query(OFFSET) offset: Int,
+        @Query(ApiHelper.TIME_STAMP) timeStamp: String,
+        @Query(ApiHelper.API_KEY) publicApiKey: String,
+        @Query(ApiHelper.HASH) hash: String
+    ): MoviesResponseModelDto
 
     @GET(ApiEndpoint.CHARACTERS_DETAIL_URL)
     suspend fun getMarvelCharacter(

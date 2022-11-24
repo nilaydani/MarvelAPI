@@ -5,12 +5,19 @@ import com.lbg.demo.core.presentation.dispatchers.DispatcherProvider
 import com.lbg.demo.core.presentation.dispatchers.StandardDispatchers
 import com.lbg.demo.marvel_heroes.data.remote.data_source.MarvelApi
 import com.lbg.demo.marvel_heroes.data.remote.data_source.mapper.characters.*
+import com.lbg.demo.marvel_heroes.data.remote.data_source.mapper.movies.MovieDataMapper
+import com.lbg.demo.marvel_heroes.data.remote.data_source.mapper.movies.MovieResponseMapper
 import com.lbg.demo.marvel_heroes.data.remote.data_source.responses.characters.*
+import com.lbg.demo.marvel_heroes.data.remote.data_source.responses.movies.Data
+import com.lbg.demo.marvel_heroes.data.remote.data_source.responses.movies.MoviesResponseModelDto
 import com.lbg.demo.marvel_heroes.data.remote.data_source.util.ApiEndpoint
 import com.lbg.demo.marvel_heroes.data.remote.data_source.util.ApiHelper
-import com.lbg.demo.marvel_heroes.domain.model.characters.*
-import com.lbg.demo.marvel_heroes.domain.repository.MarvelCharacterRepository
 import com.lbg.demo.marvel_heroes.data.repository.MarvelCharacterRepositoryImpl
+import com.lbg.demo.marvel_heroes.data.repository.MarvelMovieRepositoryImpl
+import com.lbg.demo.marvel_heroes.domain.model.characters.*
+import com.lbg.demo.marvel_heroes.domain.model.movies.MoviesResponseModel
+import com.lbg.demo.marvel_heroes.domain.repository.MarvelCharacterRepository
+import com.lbg.demo.marvel_heroes.domain.repository.MovieRepository
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -60,9 +67,23 @@ object AppModule {
 
     @Provides
     @Singleton
+    fun provideMovieDataMapper():
+            Transform<Data, com.lbg.demo.marvel_heroes.domain.model.movies.Data> {
+        return MovieDataMapper()
+    }
+
+    @Provides
+    @Singleton
     fun provideCharacterResponseMapper(dataMapper: Transform<DataDto?, DataModel>):
             Transform<CharacterResponseDto, CharacterResponseModel> {
         return CharacterResponseMapper(dataMapper)
+    }
+
+    @Provides
+    @Singleton
+    fun provideMovieResponseMapper(dataMapper: Transform<Data, com.lbg.demo.marvel_heroes.domain.model.movies.Data>):
+            Transform<MoviesResponseModelDto, MoviesResponseModel> {
+        return MovieResponseMapper(dataMapper)
     }
 
     @Singleton
@@ -84,6 +105,14 @@ object AppModule {
         marvelApi: MarvelApi,
         characterResponseMapper: Transform<CharacterResponseDto, CharacterResponseModel>
     ): MarvelCharacterRepository = MarvelCharacterRepositoryImpl(marvelApi, characterResponseMapper)
+
+    @Singleton
+    @Provides
+    fun provideMarvelMovieRepository(
+        marvelApi: MarvelApi,
+        movieResponseMapper: Transform<MoviesResponseModelDto, MoviesResponseModel>
+    ): MovieRepository = MarvelMovieRepositoryImpl(marvelApi, movieResponseMapper)
+
 
     @Singleton
     @Provides
