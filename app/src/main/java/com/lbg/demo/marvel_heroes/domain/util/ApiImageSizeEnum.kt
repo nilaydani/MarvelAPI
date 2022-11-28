@@ -1,9 +1,3 @@
-/*
- * ApiImageSizeEnum.kt
- * Personal App Android
- * Created by Alan Hernández on 27/01/22 16:55
- */
-
 package com.lbg.demo.marvel_heroes.domain.util
 
 enum class ApiImageSizeEnum(imageSize: String) {

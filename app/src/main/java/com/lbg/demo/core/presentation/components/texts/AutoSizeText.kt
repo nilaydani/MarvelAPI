@@ -1,9 +1,3 @@
-/*
- * AutoSizeText.kt
- * Personal App Android
- * Created by Alan Hernández on 25/02/22 21:54
- */
-
 package com.lbg.demo.core.presentation.components.texts
 
 import androidx.compose.foundation.layout.BoxWithConstraints

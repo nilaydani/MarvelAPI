@@ -1,9 +1,3 @@
-/*
- * CharacterResponseMapperTest.kt
- * Personal App Android
- * Created by Alan Hernández on 14/03/22 16:49
- */
-
 package com.lbg.demo.feature_marvel_heroes.data.remote.data_source.mapper.characters
 
 import com.lbg.demo.feature_marvel_heroes.data.remote.data_source.mapper.characters.mocks.CharactersMocks

@@ -1,9 +1,3 @@
-/*
- * IntExtensions.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 12:59
- */
-
 package com.lbg.demo.core.extensions
 
 /**

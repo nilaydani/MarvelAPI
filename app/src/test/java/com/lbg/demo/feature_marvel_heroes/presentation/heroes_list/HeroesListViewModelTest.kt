@@ -1,9 +1,3 @@
-/*
- * HeroesListViewModelTest.kt
- * Personal App Android
- * Created by Alan Hernández on 26/03/22 17:00
- */
-
 package com.lbg.demo.feature_marvel_heroes.presentation.heroes_list
 
 import androidx.arch.core.executor.testing.InstantTaskExecutorRule

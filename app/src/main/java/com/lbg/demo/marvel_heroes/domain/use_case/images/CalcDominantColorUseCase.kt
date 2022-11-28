@@ -1,9 +1,3 @@
-/*
- * CalculateDominantColorUseCase.kt
- * Personal App Android
- * Created by Alan Hernández on 25/02/22 17:35
- */
-
 package com.lbg.demo.marvel_heroes.domain.use_case.images
 
 import android.graphics.Bitmap

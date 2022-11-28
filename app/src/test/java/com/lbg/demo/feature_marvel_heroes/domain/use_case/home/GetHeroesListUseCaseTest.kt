@@ -1,9 +1,3 @@
-/*
- * GetHeroesListUseCaseTest.kt
- * Personal App Android
- * Created by Alan Hernández on 26/03/22 13:03
- */
-
 package com.lbg.demo.feature_marvel_heroes.domain.use_case.home
 
 import com.lbg.demo.core.data.Resource

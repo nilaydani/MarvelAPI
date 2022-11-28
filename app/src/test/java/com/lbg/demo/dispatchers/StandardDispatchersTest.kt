@@ -1,9 +1,3 @@
-/*
- * StandardDispatchersTest.kt
- * Personal App Android
- * Created by Alan Hernández on 26/03/22 19:16
- */
-
 package com.lbg.demo.dispatchers
 
 import com.lbg.demo.core.presentation.dispatchers.DispatcherProvider

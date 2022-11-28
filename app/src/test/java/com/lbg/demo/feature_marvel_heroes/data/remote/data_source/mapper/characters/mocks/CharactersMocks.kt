@@ -1,9 +1,3 @@
-/*
- * CharactersMocks.kt
- * Personal App Android
- * Created by Alan Hernández on 14/03/22 17:10
- */
-
 package com.lbg.demo.feature_marvel_heroes.data.remote.data_source.mapper.characters.mocks
 
 import com.lbg.demo.core.data.Resource
