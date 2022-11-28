@@ -1,9 +1,3 @@
-/*
- * PresentationUtils.kt
- * Personal App Android
- * Created by Alan Hernández on 27/01/22 0:28
- */
-
 package com.lbg.demo.marvel_heroes.presentation.util
 
 import com.lbg.demo.core.util.Constants.DOT

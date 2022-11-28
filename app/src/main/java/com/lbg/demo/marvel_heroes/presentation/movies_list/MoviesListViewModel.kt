@@ -1,9 +1,3 @@
-/*
- * HeroesListViewModel.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 21:50
- */
-
 package com.lbg.demo.marvel_heroes.presentation.movies_list
 
 import android.graphics.drawable.Drawable

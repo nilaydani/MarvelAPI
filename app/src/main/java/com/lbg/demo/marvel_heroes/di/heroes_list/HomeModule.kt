@@ -1,9 +1,3 @@
-/*
- * HomeModule.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 17:44
- */
-
 package com.lbg.demo.marvel_heroes.di.heroes_list
 
 import com.lbg.demo.marvel_heroes.domain.repository.MarvelCharacterRepository

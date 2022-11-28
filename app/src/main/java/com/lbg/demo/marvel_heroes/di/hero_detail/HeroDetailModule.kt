@@ -1,9 +1,3 @@
-/*
- * HeroDetailModule.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 21:45
- */
-
 package com.lbg.demo.marvel_heroes.di.hero_detail
 
 import com.lbg.demo.marvel_heroes.domain.repository.MarvelCharacterRepository

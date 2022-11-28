@@ -1,9 +1,3 @@
-/*
- * HeroDetailScreen.kt
- * Personal App Android
- * Created by Alan Hernández on 23/02/22 22:38
- */
-
 package com.lbg.demo.marvel_heroes.presentation.hero_detail.components
 
 import androidx.compose.animation.core.FastOutSlowInEasing

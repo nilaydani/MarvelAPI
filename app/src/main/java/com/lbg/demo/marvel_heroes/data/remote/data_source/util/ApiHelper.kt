@@ -1,9 +1,3 @@
-/*
- * ApiHelper.kt
- * Personal App Android
- * Created by Alan Hernández on 17/01/22 15:01
- */
-
 package com.lbg.demo.marvel_heroes.data.remote.data_source.util
 
 import com.facebook.stetho.okhttp3.StethoInterceptor

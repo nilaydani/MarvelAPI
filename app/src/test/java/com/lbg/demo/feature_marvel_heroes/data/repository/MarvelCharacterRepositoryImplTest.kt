@@ -1,9 +1,3 @@
-/*
- * MarvelCharacterRepositoryImplTest.kt
- * Personal App Android
- * Created by Alan Hernández on 15/03/22 17:22
- */
-
 package com.lbg.demo.feature_marvel_heroes.data.repository
 
 import com.lbg.demo.core.data.Resource

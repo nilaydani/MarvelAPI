@@ -1,9 +1,3 @@
-/*
- * CharacterResponse.kt
- * Personal App Android
- * Created by Alan Hernández on 17/01/22 14:49
- */
-
 package com.lbg.demo.marvel_heroes.domain.model.characters
 
 data class CharacterResponseModel(

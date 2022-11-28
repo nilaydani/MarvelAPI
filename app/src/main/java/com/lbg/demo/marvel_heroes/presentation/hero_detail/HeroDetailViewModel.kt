@@ -1,9 +1,3 @@
-/*
- * HeroesDetailViewModel.kt
- * Personal App Android
- * Created by Alan Hernández on 23/02/22 22:33
- */
-
 package com.lbg.demo.marvel_heroes.presentation.hero_detail
 
 import androidx.compose.runtime.mutableStateOf

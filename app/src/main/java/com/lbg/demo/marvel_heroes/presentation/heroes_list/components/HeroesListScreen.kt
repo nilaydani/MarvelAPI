@@ -1,9 +1,3 @@
-/*
- * HeroesListScreen.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 21:53
- */
-
 package com.lbg.demo.marvel_heroes.presentation.heroes_list.components
 
 import androidx.activity.OnBackPressedDispatcher
@@ -124,6 +118,7 @@ fun SearchBar(
         )
     }
 }
+
 
 @Composable
 fun HeroNickNameAndName(

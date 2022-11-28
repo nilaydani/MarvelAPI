@@ -1,9 +1,3 @@
-/*
- * ItemMapper.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 19:44
- */
-
 package com.lbg.demo.marvel_heroes.data.remote.data_source.mapper.characters
 
 import com.lbg.demo.core.domain.mapper.Transform

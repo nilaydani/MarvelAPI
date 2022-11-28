@@ -1,9 +1,3 @@
-/*
- * HeroesListScreen.kt
- * Personal App Android
- * Created by Alan Hernández on 25/01/22 21:53
- */
-
 package com.lbg.demo.marvel_heroes.presentation.movies_list.components
 
 import androidx.activity.OnBackPressedDispatcher
@@ -87,6 +81,7 @@ fun MoviesListScreen(
 }
 
 @Composable
+
 fun SearchBar(
     modifier: Modifier = Modifier,
     hint: String = EMPTY_STRING,
